@@ -32,13 +32,6 @@
 telegram订阅频道：https://t.me/ssrpanel
 ````
 
-## 捐赠
-**以太坊钱包** : 0x968f797f194fcec05ea571723199748b58de38ba
-
-![支持作者](https://github.com/ssrpanel/ssrpanel/blob/master/public/assets/images/donate.jpg?raw=true)
-
-[VPS推荐&购买经验](https://github.com/ssrpanel/SSRPanel/wiki/VPS%E6%8E%A8%E8%8D%90&%E8%B4%AD%E4%B9%B0%E7%BB%8F%E9%AA%8C)
-
 ## 安装
 #### 环境要求
 ````
@@ -51,10 +44,8 @@ PHP必须开启zip、xml、curl、gd、gd2、fileinfo、openssl、mbstring组件
 ````
 
 #### 拉取代码
-````
-cd /home/wwwroot/
-git clone https://github.com/ssrpanel/SSRPanel.git
-````
+
+
 
 #### 配置数据库
 ````
@@ -271,11 +262,6 @@ ntpdate cn.pool.ntp.org
 1.数据库表字段请务必使用蟒蛇法，严禁使用驼峰法
 2.写完代码最好格式化，该空格一定要空格，该注释一定要注释，便于他人阅读代码
 3.本项目中ajax返回格式都是 {"status":"fail 或者 success", "data":[数据], "message":"文本消息提示语"}
-````
-
-## 收费版
-````
-收费版代码混淆，不开源，具体请知识星球上私信我
 ````
 
 ## 致敬
