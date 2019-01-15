@@ -8,6 +8,10 @@
 <head>
     <meta charset="utf-8" />
     <title>{{trans('login.title')}}</title>
+    <!--���ӵ�¼ҳ�汳��ͼƬ-->
+    <style>
+		body {background-image:url('/assets/images/background.jpg');}
+	</style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="" name="description" />
@@ -45,28 +49,28 @@
         @if(app()->getLocale() == 'zh-CN')
             <a href="{{url('lang', ['locale' => 'zh-tw'])}}">繁體中文</a>
             <a href="{{url('lang', ['locale' => 'en'])}}">English</a>
-            <a href="{{url('lang', ['locale' => 'ja'])}}">日本語</a>
-            <a href="{{url('lang', ['locale' => 'ko'])}}">한국어</a>
+            <a href="{{url('lang', ['locale' => 'ja'])}}">日本�?/a>
+            <a href="{{url('lang', ['locale' => 'ko'])}}">한국�?/a>
         @elseif(app()->getLocale() == 'zh-tw')
-            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中文</a>
+            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中�?/a>
             <a href="{{url('lang', ['locale' => 'en'])}}">English</a>
-            <a href="{{url('lang', ['locale' => 'ja'])}}">日本語</a>
-            <a href="{{url('lang', ['locale' => 'ko'])}}">한국어</a>
+            <a href="{{url('lang', ['locale' => 'ja'])}}">日本�?/a>
+            <a href="{{url('lang', ['locale' => 'ko'])}}">한국�?/a>
         @elseif(app()->getLocale() == 'en')
-            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中文</a>
+            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中�?/a>
             <a href="{{url('lang', ['locale' => 'zh-tw'])}}">繁體中文</a>
-            <a href="{{url('lang', ['locale' => 'ja'])}}">日本語</a>
-            <a href="{{url('lang', ['locale' => 'ko'])}}">한국어</a>
+            <a href="{{url('lang', ['locale' => 'ja'])}}">日本�?/a>
+            <a href="{{url('lang', ['locale' => 'ko'])}}">한국�?/a>
         @elseif(app()->getLocale() == 'ko')
-            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中文</a>
+            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中�?/a>
             <a href="{{url('lang', ['locale' => 'zh-tw'])}}">繁體中文</a>
             <a href="{{url('lang', ['locale' => 'en'])}}">English</a>
-            <a href="{{url('lang', ['locale' => 'ja'])}}">日本語</a>
+            <a href="{{url('lang', ['locale' => 'ja'])}}">日本�?/a>
         @elseif(app()->getLocale() == 'ja')
-            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中文</a>
+            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中�?/a>
             <a href="{{url('lang', ['locale' => 'zh-tw'])}}">繁體中文</a>
             <a href="{{url('lang', ['locale' => 'en'])}}">English</a>
-            <a href="{{url('lang', ['locale' => 'ko'])}}">한국어</a>
+            <a href="{{url('lang', ['locale' => 'ko'])}}">한국�?/a>
         @else
         @endif
     </nav>

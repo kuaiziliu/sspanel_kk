@@ -8,6 +8,10 @@
 <head>
     <meta charset="utf-8" />
     <title>{{trans('register.title')}}</title>
+    <!--���ӵ�¼ҳ�汳��ͼƬ-->
+    <style>
+		body {background-image:url('/assets/images/background.jpg');}
+	</style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="" name="description" />
@@ -41,28 +45,28 @@
         @if(app()->getLocale() == 'zh-CN')
             <a href="{{url('lang', ['locale' => 'zh-tw'])}}">繁體中文</a>
             <a href="{{url('lang', ['locale' => 'en'])}}">English</a>
-            <a href="{{url('lang', ['locale' => 'ja'])}}">日本語</a>
-            <a href="{{url('lang', ['locale' => 'ko'])}}">한국어</a>
+            <a href="{{url('lang', ['locale' => 'ja'])}}">日本�?/a>
+            <a href="{{url('lang', ['locale' => 'ko'])}}">한국�?/a>
         @elseif(app()->getLocale() == 'zh-tw')
-            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中文</a>
+            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中�?/a>
             <a href="{{url('lang', ['locale' => 'en'])}}">English</a>
-            <a href="{{url('lang', ['locale' => 'ja'])}}">日本語</a>
-            <a href="{{url('lang', ['locale' => 'ko'])}}">한국어</a>
+            <a href="{{url('lang', ['locale' => 'ja'])}}">日本�?/a>
+            <a href="{{url('lang', ['locale' => 'ko'])}}">한국�?/a>
         @elseif(app()->getLocale() == 'en')
-            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中文</a>
+            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中�?/a>
             <a href="{{url('lang', ['locale' => 'zh-tw'])}}">繁體中文</a>
-            <a href="{{url('lang', ['locale' => 'ja'])}}">日本語</a>
-            <a href="{{url('lang', ['locale' => 'ko'])}}">한국어</a>
+            <a href="{{url('lang', ['locale' => 'ja'])}}">日本�?/a>
+            <a href="{{url('lang', ['locale' => 'ko'])}}">한국�?/a>
         @elseif(app()->getLocale() == 'ko')
-            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中文</a>
+            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中�?/a>
             <a href="{{url('lang', ['locale' => 'zh-tw'])}}">繁體中文</a>
             <a href="{{url('lang', ['locale' => 'en'])}}">English</a>
-            <a href="{{url('lang', ['locale' => 'ja'])}}">日本語</a>
+            <a href="{{url('lang', ['locale' => 'ja'])}}">日本�?/a>
         @elseif(app()->getLocale() == 'ja')
-            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中文</a>
+            <a href="{{url('lang', ['locale' => 'zh-CN'])}}">简体中�?/a>
             <a href="{{url('lang', ['locale' => 'zh-tw'])}}">繁體中文</a>
             <a href="{{url('lang', ['locale' => 'en'])}}">English</a>
-            <a href="{{url('lang', ['locale' => 'ko'])}}">한국어</a>
+            <a href="{{url('lang', ['locale' => 'ko'])}}">한국�?/a>
         @else
         @endif
     </nav>
@@ -152,11 +156,10 @@
             ,closeBtn: false
             ,area: '500px;'
             ,shade: 0.8
-            ,id: 'tnc' //设定一个id，防止重复弹出
-            ,resize: false
+            ,id: 'tnc' //设定一个id，防止重复弹�?            ,resize: false
             ,btn: ['{{trans('register.tnc_title')}}']
             ,btnAlign: 'c'
-            ,moveType: 1 //拖拽模式，0或者1
+            ,moveType: 1 //拖拽模式�?或�?
             ,content: '<div style="padding: 20px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">{!! trans('register.tnc_content') !!}</div>'
             ,success: function(layero){
 //                var btn = layero.find('.layui-layer-btn');
